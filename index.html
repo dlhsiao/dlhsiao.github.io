@@ -21,6 +21,9 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"></script>
     <script src="js/custom.js"></script>
+
+    <!--Mastodon Verification-->
+    <link rel="me" href="https://hachyderm.io/@dana_hsiao">
   </head>
   <body>
     <nav class="navbar">
@@ -79,7 +82,7 @@
                   <p>
                     <b>Status:</b> Released<br>
                     <b>Type:</b> Metaverse Hosting<br>
-                    <b>Website:</b> <a href="https://www.alakazam.io/" alt="Link to the Alakazam website.">Alakazam</a>
+                    <b>Website:</b> <a href="https://web.archive.org/web/20230610052455/https://www.alakazam.io/" alt="Link to the archived Alakazam website.">Alakazam (archived)</a>
                   </p>
                 </div>
                 <div class="six columns">
@@ -94,21 +97,124 @@
                 <div class="twelve columns">
                   <h5>Description</h5>
                   <p>
-                    Alakazam is an all-in-one metaverse solution where a customer can easily get their own metaverse set up
+                    Alakazam was an all-in-one metaverse solution where a customer can easily get their own metaverse set up
                     using Alakazam's custom implementation of Mozilla Hubs, custom room scenes, and custom avatars on an Oracle hosting 
                     system in one step. As a feature developer, I worked on adding new features to the base metaverse people get with their subscription. 
                     <br><br>
                     My major contribution was adding full-body avatars. Most currently available metaverses right now only have half-body
                     avatars, which are just a floating torso and hands. I created a dual system where people could either use an integration of
                     ReadyPlayerMe, an online character creation tool, or upload a compatible model of their own to use as an avatar. These 
-                    full-body avatars are full animated and provide a more immersive experience that many have asked for in other metaverses.
+                    full-body avatars are fully animated and provide a more immersive experience. This addition also doesn't compromise the exisiting half-body
+                    avatar system. People are still able to use half-body avatars in conjunction with full-body avatars. 
                     <br><br>
+                    Additionally, I helped adapt the existing pen tool to create a laser pointer that would allow people to see what others people were looking at.
+                    As a side effect of using full-body avatars, it can be difficult to see what a person is looking at. The animations for the avatars conflicted with the
+                    code used to turn the head to follow the mouse. The pen had a guideline that allowed the user to be able to see where their mouse was pointing so they
+                    could draw. This guideline was visible to others as well, so I isolated that component to create a pointer. 
                   </p>
                 </div>
               </div>
             </div>
           </div>
           <!--Alakazam-->
+
+          <!--Sports Car Instagram Filter-->
+          <div class="row">
+            <button class="collapsible twelve columns">Sports Car AR Experience</button>
+          </div>
+          <div class="wrapper">
+            <div class="content">
+              <span class="embed-youtube" style="text-align: center; display: block;">
+
+              </span>
+              <div class="row">
+                <div class="six columns">
+                  <h5>Information</h5>
+                  <p>
+                    <b>Status:</b> Released<br>
+                    <b>Type:</b> AR Instagram Filter, AR Web Experience<br>
+
+                  </p>
+                </div>
+                <div class="six columns">
+                  <h5>Development</h5>
+                  <p>
+                    <b>Role:</b> Developer<br>
+                    <b>Tools:</b> SparkAR, 8th Wall
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="twelve columns">
+                  <h5>Description</h5>
+                  <p>
+                    My employer was subcontracted to create an AR Instagram filter to support a showcase for an upcoming
+                    car show. The car model and textures were provided by the car manufacturer and we created a filter that
+                    would place a life-sized car down on any flat surface. The car then be rotated, moved, or scaled how the
+                    user liked. Tapping the car would cycle through the various paint jobs available. An additional experience
+                    was to be created with volumetric video of the influencer designer doing various poses and talking through their
+                    design process.
+                    <br><br>
+                    I intitally worked on creating the web experience using the provided volumetric video of the designer. Using 8thWall,
+                    I created a web app where a user could place the 3D video of the designer in their room and swipe inbetween the various
+                    captures of him. The user could also pause the video and take pictures or recordings of the designer and the surroundings
+                    as captured by the phone camera. I was then put on the Instagram filter, where I made sure the car model would be life-sized
+                    upon spawn and fixed the materials and textures.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Sports Car Instagram Filter-->
+
+          <!--VR Telehealth-->
+          <div class="row">
+            <button class="collapsible twelve columns">VR Telehealth</button>
+          </div>
+          <div class="wrapper">
+            <div class="content">
+              <span class="embed-youtube" style="text-align: center; display: block;">
+
+              </span>
+              <div class="row">
+                <div class="six columns">
+                  <h5>Information</h5>
+                  <p>
+                    <b>Type:</b> Muliplayer VR Experience<br>
+
+                  </p>
+                </div>
+                <div class="six columns">
+                  <h5>Development</h5>
+                  <p>
+                    <b>Role:</b> Developer<br>
+                    <b>Tools:</b> Unity3D, Meta Avatars, Photon
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="twelve columns">
+                  <h5>Description</h5>
+                  <p>
+                    This service aims to make available specialty help to hospitals and clinics that might be too out of
+                    the way to have ready access to these experts. While they have a solution that involves video chatting,
+                    they wanted a VR solution that would allow the remote doctors to interface in a more physical enviornment
+                    with the patient at the hospital.
+                    <br><br>
+                    The client wanted users to be able to pick from a set of standarized avatars that incorperated a diverse range
+                    of people. I used a Unity asset that provided a template for using Meta avatars with Photon, allowing for multiplayer
+                    support. I was able to create a system where users could either touch a statue of an avatar to choose one, or press a
+                    button that would pick one at random. The users would be able to see how they looked in a mirror. We did run into a
+                    strange bug where some people would be invisible to new people joining until they changed their avatars. I was able to
+                    do some testing to narrow the bug down to figure out that if a person changed their avatar, new people would not be able
+                    to see the first person until they changed their avatar again. I dug into the error as much as I could through the code
+                    and sent a report to the developer, but I was taken off the project before they replied. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--VR Telehealth-->
 
           <!--eCommerce Metaverse-->
           <div class="row">
