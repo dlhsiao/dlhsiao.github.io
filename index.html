@@ -54,6 +54,226 @@
         <h1>Portfolio</h1>
         <div class="projects">
 
+        <!-- GPB VR|AR -->
+          <div class="row">
+            <button class="collapsible twelve columns">GPB VR|AR</button>
+          </div>
+          <div class="wrapper">
+            <div class="content">
+              <div class="row">
+                <div class="six columns" style="text-align: center;">
+                  <img src="images/gpb_menu.png" 
+                    alt="Virtual reality hub menu: A large domed room with the roof and walls made of glass sitting in a field.
+                    There are several round tables surrounded by chairs. One table has a black panel showing the game controls
+                    for virtual reality. On the far side of the room is a large screen with the menu showing the first four modules: 
+                    Atlanta Symphony, Civil Rights Movement, Georgia Forests 1, and Georgia Forests 2."
+                  />
+                </div>
+                <div class="six columns" style="text-align: center;">
+                  <img src="images/gpb_ftq.png"
+                    alt="Farm Tech Quest Module: A large hexagonal room with each wall having two large windows stacked above one another.
+                    There are four pedestals. On the far left, the pedestal is labeled Percision Agriculture and has a model of the state of 
+                    Georgia with a satellite floating above it. On the left, the pedestal is labeled Irrigation and has a planter box with crops.
+                    On the right, the pedestal is labeled Robotics and has a drone. On the far right, the pedestal is labeled Hydroponics and has 
+                    a hydroponics system on it. Beyond the pedestals is a hologram table with a screen that reads 'Time to Explore'."
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="six columns" style="text-align: center;">
+                  <img src="images/gpb_oval.png"
+                    alt="Oval Office: A 3D rendering of the Oval Office. There are white circles placed over items of interest for the user to click
+                    on to learn more about the item."
+                  />
+                </div>
+                <div class="six columns" style="text-align: center;">
+                  <img src="images/gpb_sf.png"
+                    alt="Slavery and Freedom Module: A model of a house sits on a table. The house does not have walls so that users can see the layout and 
+                    interact with the rooms. One room is outlined in yellow showing that it has been selected. A screen behind the house reads: Children's Bedroom.
+                    The bedrooms on the second floor of the main house were used by the Owens children and any guests visiting the home. In the children's bedroom,
+                    Emma Katin, the enslaved nursmaid, would have slept on a bedroll on the floor near the children while they slept in wooden beds with mattresses.
+                    Emma's day-to-day duties were full of contradiction. She was tasked with nurturing, disciplining, and controlling white children, who would become 
+                    her owners."
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="six columns">
+                  <h5>Information</h5>
+                  <p>
+                    <b>Status:</b> Released: Phase 2<br>
+                    <b>Type:</b>  Educational Media<br>
+                    <b>Website:</b> <a href="https://www.gpb.org/apps/vr-ar" alt="Link to GPB page for the VR|AR app">GPB VR|AR</a><br>
+                    <b>Website:</b> <a href="https://www.gpb.org/education/farmtech-quest" alt="Link to the GPB page for the Farm Tech Quest module">FarmTech Quest</a><br>
+                    <b>Find at: </b> <a href="https://apps.apple.com/us/app/gpb-vr-ar/id6756442017" alt="Link to Apple Store page">Apple Store</a> and <a href="https://www.meta.com/experiences/gpb-vrar/25893233220273756/" alt="Link to Oculus store page">Oculus</a> <br>
+                  </p>
+                </div>
+                <div class="six columns">
+                  <h5>Development</h5>
+                  <p>
+                    <b>Role:</b> Developer <br>
+                    <b>Tools:</b> Unity3D, XR Interaction Toolkit
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="twelve columns">
+                  <h5>Description</h5>
+                  <p>
+                    GPB VR|AR, built in conjunction with Georgia Public Broadcasting, is an app aiming to teach middle and high schoolers 
+                    about the state of Georgia. It consists of several modules covering many topics including the arts, geography, history, and science. 
+                    <br><br>
+                    I was intially brought on to build the agriculture module, what would eventually become FarmTech Quest. FTQ consists of two parts. The first 
+                    phase is the exploration phase where the user can observe four examples of modern farm equipment and by clicking hotspots on the the object 
+                    open up screens with more information. In the second phase, the user then can interact with the simulation. The user takes the role of a consulting 
+                    firm and uses the information they just learned to help farmers choose what technology would best help the farm. They are scored on various metrics 
+                    and then given a star rating. 
+                    <br><br>
+                    This was to be a VR first module, but it also had to stand alone as a WebGL game too. So while I built it with VR in mind, I also had to think of how 
+                    to implement all the effects and controls for both desktop and mobile at the same time. I first worked on prototyping the base systems including the 
+                    hotspots, the pedestals, and the simulation. Once I had figured that out, I moved to the main project and worked on building the fleshed out version. 
+                    The producer said on the beta delivery that she had never posted a build with so few bugs or issues. FarmTech Quest released with the first wave of simple modules.
+                    <br><br>
+                    When the main developer left, I took over as the primary developer for the entire project. For the first release, I worked on polishing tasks to get the 
+                    app ready for the initial release. The previous developer had built the entire project. While I was developing FarmTech Quest, I was able to mostly rely on 
+                    him when I had questions. However, when he left, it was much harder to get in contact with him. I had to really dig into the codebase and research to answer my 
+                    own questions and make the most out of scheduled meetings with him. 
+                    <br><br>
+                    For the second release, I worked on the medium complexity modules. These were mostly implemented, but they had various problems and needed polishing. I also implemented 
+                    features that the previous developer never got to. For the overall hotspot system, there was supposed to be three types of informational windows - video, images, and text. 
+                    However, the text windows were never implemented, so FableVision had to create composite images that had the actual image they wanted to show plus the text that went along with it. 
+                    This meant that if GPB wanted some text changed, new images would have to be created. I implemented the text hotspots as precursor to adding a new type of hotspot - gallery hotspots. 
+                    These were collections of hotspots into one overall hotspot. This required the full stack - in addition to the front end changes to make it look like how we wanted, I had to change 
+                    the back-end to store the information correctly and the CMS so that these could be created by the content entry team.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- GPB VR|AR -->
+
+        <!-- Nardagani -->
+          <div class="row">
+            <button class="collapsible twelve columns">Nardagani</button>
+          </div>
+          <div class="wrapper">
+            <div class="content">
+              <span class="embed-youtube" style="text-align: center; display: block;">
+                <iframe class="youtube-player" width="560" height="315" 
+                  src="https://www.youtube.com/embed/l0o3uKaEZcM?si=dzeZgZG6njoiWZ4_" 
+                  title="YouTube video player" frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </span>
+              <div class="row">
+                <div class="six columns">
+                  <h5>Information</h5>
+                  <p>
+                    <b>Status:</b> Released <br>
+                    <b>Type:</b> Phonics Reading App<br>
+                    <b>Website:</b> <a href="https://www.nardagani.com/" alt="Link to Nardagani Website">Nardagani</a><br>
+                    <b>Find at:</b> <a href="https://apps.apple.com/us/app/id6740491924" alt="Link to Apple Store site for Nardagani">Apple Store</a> and 
+                    <a href="https://play.google.com/store/apps/details?id=com.NardaganiInc.ReadNardaganiLearntoRead&hl=en_CA&pli=1" alt="Link to Google Play store site for Nardagani">Google Play Store</a>
+                  </p>
+                </div>
+                <div class="six columns">
+                  <h5>Development</h5>
+                  <p>
+                    <b>Role:</b> Developer<br>
+                    <b>Tools:</b> Unity3D
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="twelve columns">
+                  <h5>Description</h5>
+                  <p>
+                    Nardagani is an app designed to teach challenged readers how to read English. When learning how to read English at an older age, it can be hard to grasp how the different 
+                    letters interact with eachother to produce the sounds they do. After living in Japan, the founder adapted Hiragana to create phonetic symbols that augment letters to make 
+                    it clear what each letter actually sounds like in a word. 
+                    <br><br>
+                    I was brought onto the app to get it ready for release after the original studio stopped working on it and FableVision took over. I mostly worked on polishing front-end tasks,
+                    adjusting backgrounds, text, and fixing small issues. 
+                    <br><br>
+                    The biggest task I undertook however, was changing their onboarding process. Originally, you had to create an account to try the app for free. They were afraid that having an obstacle that 
+                    involves a user giving their email and birthdate would scare users and potential subscribers off before they even saw the program. They asked us to move the sign-in screen to the subscription page. 
+                    However, the entire saving system depended on these accounts as their user data was stored off-device on their servers. I thought a lot about what to do about this, since we would need to 
+                    save the users' progress before they had an account, and then we would have to associate their save data to their account after making one. To change the way the app stored data to completely 
+                    on device or in some sort of hybrid method would have taken a lot of work would both have involved significant changes to the front-end and back-end, plus we would want to make sure that exisiting 
+                    users would still be able to access their save data unimpeded. The best solution would be to use the exisiting architecture as much as possible, so I came up with the solution of guest accounts. When 
+                    a new user lands on the starting page and clicks "Get Started", a guest account is created on the back-end. All the user's save data is stored to that account and as long as they didn't delete the app 
+                    with all of the stored data, it would stay signed-in so the user would not lose their data. When the user is prompted to create their account upon subscribing, they are converting their guest account to 
+                    a full account that they could now access on different devices. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- Nardagani -->  
+
+        <!--The People's Garden-->
+          <div class="row">
+            <button class="collapsible twelve columns">The People's Garden</button>
+          </div>
+          <div class="wrapper">
+            <div class="content">
+              <span class="embed-youtube" style="text-align: center; display: block;">
+                <iframe class="youtube-player" width="560" height="315"
+                 src="https://www.youtube.com/embed/MPaE4xQ4L90?si=KYVtqLxanY8jvA2N" frameborder="0"
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                 allowfullscreen></iframe>
+              </span>
+              <div class="row">
+                <div class="six columns">
+                  <h5>Information</h5>
+                  <p>
+                    <b>Type:</b>  Hackathon Project<br>
+                    <b>Project Site:</b> <a href="https://devpost.com/software/the-people-s-garden" 
+                    alt="Link to project's devpost site.">Devpost</a> <br>
+                    <b>Placement:</b> Honorable Mention in Agog's Connecting for Change with Social XR track.
+                  </p>
+                </div>
+                <div class="six columns">
+                  <h5>Development</h5>
+                  <p>
+                    <b>Role:</b> Developer<br>
+                    <b>Tools:</b> Unity3D, Meta Presence Platform
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="twelve columns">
+                  <h5>Description</h5>
+                  <p>
+                    The MIT Reality Hack is an annual XR focused hackathon, bringing together professionals, students, and hobbyists alike. When hearing
+                    about the tracks offered, there was a large focus on connection and sustainability. Combined with the facts that urban areas are lacking in 
+                    public third spaces and the rising cost of groceries, a project centered around community gardens seemed like the perfect fit.
+                    <br><br>
+                    I was able to gather a balanced team of a project manager, a 3D artist, a 2D artist, and another developer other than me. When first coming up
+                    with the idea, I had initally thought of a mixed reality experience where the area around you would turn into an abanonded lot that you would clean up
+                    and then create a garden in. When talking to my teammates, they suggested that reframing the situation can help people pay more attention, so we changed
+                    the scale of the experience from a full room to table-top activity.
+                    <br><br>
+                    As a table-top mixed reality experience, and with taking into account the theme of connection, our application was perfect for a co-located experince - where
+                    two or more people can be in the same real space in a shared instance of the application and effect the experience with respect to their respective positions.
+                    Co-location was our greatest challenge during this hackathon. We felt that the connectivity of two people working together to pick up trash, plant and water seeds,
+                    and then harvest the crops was essential to our project. Meta had a workshop on how to implement co-location, though it was still an experiemental feature. I attended
+                    and then followed up several times with the mentors from Meta. Implementation was a challenge since in order to activate co-location, you had to be a part of an established
+                    company group. After talking to the mentors, they were able to set up a group for the hackathon. Once we were able to get it working, we ran into futher issues due to the 
+                    experiemental nature of the feature. In addition to some lag issues if we went too fast, we also had some issues where objects could only be seen by one person. There were also
+                    some cases where only the host of the application could activate triggers. In the end, we were able to have a clean experience for the judges.
+                    <br><br>
+                    One of the benefits of having a table-top experience was that we could hook up the main headset to one of our computers so that while one judge was playing the experince with
+                    one of us as the other player, everyone else could see what the judge was seeing. This made it so the other judges could see the experience as well and we could talk about the
+                    application and what the judge was doing at the same time. We were named as one of the honorable mentions for Agog's Connecting for Change with Social XR track.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--The People's Garden-->
+
         <!--Memories of Kumi-Daiko-->
           <div class="row">
             <button class="collapsible twelve columns">Memories of Kumi-Daiko</button>
@@ -70,7 +290,6 @@
                 <div class="six columns">
                   <h5>Information</h5>
                   <p>
-                    <b>Status:</b> Developing Alpha Release <br>
                     <b>Type:</b>  Hackathon Project<br>
                     <b>Project Site: </b> <a href="https://devpost.com/software/memories-of-kumi-daiko" 
                     alt="Link to project's devpost site.">Devpost</a> <br>
@@ -598,8 +817,6 @@
                   <h5>Information</h5>
                   <p>
                     <b>Type:</b> Research Platform <br>
-                    <b>Website:</b> <a href="immense-anchorage-613525.herokuapp.com"
-                    alt="Link to submitted research platform">Tetris Game with Partner</a>
                   </p>
                 </div>
                 <div class="six columns">
